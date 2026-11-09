@@ -1,0 +1,379 @@
+{
+  "id": "00000000-0000-4000-8000-000000000045",
+  "version": "2.0",
+  "name": "Романів Володимир — SauceDemo SideReplay",
+  "url": "https://www.saucedemo.com",
+  "tests": [
+    {
+      "id": "00000000-0000-4000-8000-000000000040",
+      "name": "TC-01 — Авторизація (standard_user)",
+      "commands": [
+        {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "comment": "Відкриття початкової сторінки",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [],
+          "value": "standard_user"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000003",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000004",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000005",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.title",
+          "targets": [],
+          "value": "Products"
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000041",
+      "name": "TC-02 — Додавання товару (standard_user)",
+      "commands": [
+        {
+          "id": "00000000-0000-4000-8000-000000000006",
+          "comment": "Відкриття початкової сторінки",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000007",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [],
+          "value": "standard_user"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000008",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000009",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000010",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.title",
+          "targets": [],
+          "value": "Products"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000011",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000012",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.shopping_cart_badge",
+          "targets": [],
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000042",
+      "name": "TC-03 — Видалення товару (standard_user)",
+      "commands": [
+        {
+          "id": "00000000-0000-4000-8000-000000000013",
+          "comment": "Відкриття початкової сторінки",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000014",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [],
+          "value": "standard_user"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000015",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000016",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000017",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.title",
+          "targets": [],
+          "value": "Products"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000018",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000019",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.shopping_cart_badge",
+          "targets": [],
+          "value": "1"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000020",
+          "comment": "",
+          "command": "click",
+          "target": "css=.shopping_cart_link",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000021",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.title",
+          "targets": [],
+          "value": "Your Cart"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000022",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"remove-sauce-labs-backpack\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000023",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=.cart_item",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000024",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=.shopping_cart_badge",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000043",
+      "name": "BUG-01 — Сортування за ціною (problem_user)",
+      "commands": [
+        {
+          "id": "00000000-0000-4000-8000-000000000025",
+          "comment": "Відкриття початкової сторінки",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000026",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [],
+          "value": "problem_user"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000027",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000028",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000029",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.title",
+          "targets": [],
+          "value": "Products"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000030",
+          "comment": "",
+          "command": "select",
+          "target": "css=[data-test=\"product-sort-container\"]",
+          "targets": [],
+          "value": "label=Price (low to high)"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000031",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.inventory_item:first-child .inventory_item_price",
+          "targets": [],
+          "value": "$7.99"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000032",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.inventory_item:last-child .inventory_item_price",
+          "targets": [],
+          "value": "$49.99"
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000044",
+      "name": "BUG-02 — Додавання Fleece Jacket (problem_user)",
+      "commands": [
+        {
+          "id": "00000000-0000-4000-8000-000000000033",
+          "comment": "Відкриття початкової сторінки",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000034",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [],
+          "value": "problem_user"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000035",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000036",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000037",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.title",
+          "targets": [],
+          "value": "Products"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000038",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"add-to-cart-sauce-labs-fleece-jacket\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000039",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.shopping_cart_badge",
+          "targets": [],
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "00000000-0000-4000-8000-000000000046",
+      "name": "Обов’язкові сценарії TC-01–TC-03",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "00000000-0000-4000-8000-000000000040",
+        "00000000-0000-4000-8000-000000000041",
+        "00000000-0000-4000-8000-000000000042"
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000047",
+      "name": "Дефекти problem_user — перевірка",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "00000000-0000-4000-8000-000000000043",
+        "00000000-0000-4000-8000-000000000044"
+      ]
+    }
+  ],
+  "urls": [
+    "https://www.saucedemo.com"
+  ],
+  "plugins": []
+}
